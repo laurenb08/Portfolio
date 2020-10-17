@@ -9,23 +9,26 @@
 </head>
 
 <body>
-
+<!-- This section displays my header and nav bar. The nav bar is linked to each section of the page -->
     <header>
         <h1>Lauren Plenger</h1>
-        <div>
+        <nav>
             <ul>
                 <li><a href="#aboutMe">About Me</a></li>
                 <li><a href="#myProjects">My Projects</a></li>
                 <li><a href="#contactMe">Contact Me</a></li>
             </ul>
-        </div>
+        </nav>
     </header>
 
     <main>
         <div id="aboutMe" class="aboutMe">
             <h2>About Me</h2>
             <br>
-            <img src="./assets/Photo1.jpg" width="200" height="200" alt="Photo of me">
+            <!-- this section displays a current image of me with fixed height and width 
+                as well as alt text in case the image doesn't display in the browser and 
+                to make the image meet accessibility requirements -->
+            <img src="./assets/Photo1.jpg" width="200" height="200" alt="Photo of me"
             <br>
             <p>I am a 30 year old mom of 1 and I love to hike, camp, play board games, and workout!</p>
             <p>In my professional life, I love to work on teams, solve puzzles, and be creative. I have dabbled in coding for several years but got serious about it in 2020 and have fallen in love. It's challenging and exciting and has been a very fulfilling experience for me so far. I'm excited to start making my mark on the world and having a positive impact on others through the world of coding.</p>
@@ -33,27 +36,31 @@
         </div>
     </main>
         
-    <content>
+    <!-- The ID in this section is what links the nav bar to this part of the page. 
+        The classes are there for styling of each project box that I created.
+        I don't have any projects to link to yet so they just have placeholder links. -->
+    <main>
         <div id="myProjects" class="myProjects">
             <h2>My Projects</h2>
             <projects>
-                <section class="project1" class="floatLeft">
+                <section class="project" class="floatLeft">
                     <header><a href="#">Project 1</a></header>
                 </section>
-                <section class="project2" class="floatRight">
+                <section class="project" class="floatRight">
                     <header><a href="#">Project 2</a></header>
                 </section>
-                <section class="project3" class="floatLeft">
+                <section class="project" class="floatLeft">
                     <header><a href="#">Project 3</a></header>
                 </section>
-                <section class="project4" class="floatRight">
+                <section class="project" class="floatRight">
                     <header><a href="#">Project 4</a></header>
                 </section>
             </projects>
         </div>
-    </content>
+    </main>
         
-    <info>
+    <!-- about me section with a clickable link that allows you to directly email me -->
+    <section>
         <div id="contactMe" class="contactMe">
             <h2>Contact Me</h2>
             <ul>
@@ -61,11 +68,11 @@
                 <li>Email: <a href = "mailto: laurenb08@gmail.com">laurenb08@gmail.com</a></li>
             </ul>
         </div>
-    </info>
+    </section>
     
 
     <footer>
-        <h2>Made with ❤️️ by Lauren Plenger</h2>
+        <h2>Made by Lauren Plenger</h2>
     </footer>
 </body>
 </html>

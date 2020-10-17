@@ -6,8 +6,7 @@ A portfolio that includes a section about who I am and what I love followed by l
 
 ## **Links**
 
-[View the updated site by cliking here](https://laurenb08.github.io/Portfolio/
-)
+[View the updated site by cliking here](https://laurenb08.github.io/Portfolio/)
 
 [View the GitHub Repo for this project by clicking here](https://github.com/laurenb08/Portfolio)
 

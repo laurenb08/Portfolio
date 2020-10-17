@@ -6,7 +6,8 @@ A portfolio that includes a section about who I am and what I love followed by l
 
 ## **Links**
 
-[View the updated site by cliking here]()
+[View the updated site by cliking here](https://laurenb08.github.io/Portfolio/
+)
 
 [View the GitHub Repo for this project by clicking here](https://github.com/laurenb08/Portfolio)
 
@@ -18,3 +19,9 @@ A portfolio that includes a section about who I am and what I love followed by l
 - Contact information with clickable email address
 
 ## **Images**
+
+Image of CSS:
+![Image of CSS](https://github.com/laurenb08/Portfolio/raw/main/assets/portfolioCSS.png)
+
+Image of HTML:
+![Image of HTML](https://github.com/laurenb08/Portfolio/raw/main/assets/portfolioHTML.png)

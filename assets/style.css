@@ -40,18 +40,23 @@ header div ul li {
 }
 
 a {
-    color: #fff;
+    color: #000000;
     text-decoration: none;
 }
 
 main {
     margin: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #595959;
 }
 
 content {
     width: 45%;
     display: inline-block
     margin-left: 20px;
+    margin: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #595959;
 }
 
 .project1 {
@@ -126,5 +131,18 @@ content {
     text-align: center;
     background: #B3BFB8;
     color: #fff;
+}
+
+info {
+    margin: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #595959;
+}
+
+footer {
+    margin: 20px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #595959;
 }
  

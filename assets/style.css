@@ -1,11 +1,13 @@
 * {
-    box-sizing: border-box;
-    padding; 0;
-    margin 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    background-color: #F0F7F4;
+  margin-left: 20px;
+  margin: 20px;
+  background-color: #f0f7f4;
 }
 
 /* I added styling, padding, and font sizes to make sure that the 
@@ -13,90 +15,121 @@ header looked appropriately sized for the page.
 I also added a font family here to make sure 
 all browsers would be supported.  */
 header {
-    background-color: #7E8D85;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding: 10px;
-    color: #fff;
-    text-align: center;
+  background-color: #7e8d85;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
 }
 
 header h1 {
-    font-size: 48px;
-    padding-top: 15px;
+  font-size: 48px;
+  padding-top: 15px;
 }
 
 nav {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 25px;
-    display: flex;
-    max-width: 100%;
-    width: 100%;
-    background-color: #7E8D85;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 25px;
+  display: flex;
+  max-width: 100%;
+  width: 100%;
+  background-color: #7e8d85;
 }
 
 nav a {
-    background-color: #7e8d85;
-    padding: 14px 20px;
-    color: #FFF;
-    text-decoration: none;
-    float: none;
-    text-align: center;
+  background-color: #7e8d85;
+  padding: 14px 20px;
+  color: #fff;
+  text-decoration: none;
+  float: none;
+  text-align: center;
 }
 
-
 main {
-    display: inline-block
-    margin-left: 20px;
-    margin: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #595959;
+  margin-left: 20px;
+  margin: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: #595959;
+}
+
+article {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  margin: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: #595959;
+}
+
+section {
+  margin-left: 20px;
+  margin: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: #595959;
 }
 
 /* styling for all project elements. 
 I consolodated them all into one selector because 
 I wanted them all to have similar properties */
+
 .project {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 150px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #B3BFB8;
-    color: #ffffff;
+  flex: 1 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
+  height: 150px;
+  width: 100%;
+  min-width: 400px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: #b3bfb8;
+  color: #ffffff;
+}
+
+.projects {
+  margin-left: 20px;
+  margin: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: #595959;
 }
 
 .project header {
-    padding: 20px;
-    text-align: center;
-    background: #B3BFB8;
-    color: #fff;
-}
-
-.floatLeft {
-    float: left;
-    margin: 25px;
-}
-
-.floatRight {
-    float: right;
-    margin: 25px;
+  margin-left: 20px;
+  padding: 20px;
+  text-align: center;
+  background: #b3bfb8;
+  color: #fff;
 }
 
 section {
-    margin-left: 20px;
-    margin: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #595959;
+  margin-left: 20px;
+  margin: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: #595959;
 }
 
 footer {
-    margin: 20px;
-    text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #595959;
+  margin: 20px;
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: #595959;
 }
- 
-@media screen and (max-width 768px) {
-    nav {
-        flex-direction: column;
-      }
+
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
 }

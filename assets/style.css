@@ -15,38 +15,34 @@ all browsers would be supported.  */
 header {
     background-color: #7E8D85;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding: 20px;
+    padding: 10px;
     color: #fff;
+    text-align: center;
 }
 
 header h1 {
-    display: inline-block;
     font-size: 48px;
     padding-top: 15px;
 }
 
-header nav {
-    padding-top: 15px;
-    margin-top: 20px;
-    float: right;
+nav {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 25px;
+    display: flex;
+    max-width: 100%;
+    width: 100%;
+    background-color: #7E8D85;
 }
 
-header nav ul {
-    list-style-type: none;
+nav a {
     background-color: #7e8d85;
-}
-
-header nav ul li {
-    display: inline-block;
-    margin-left: 25px;
-}
-
-a {
-    color: #000000;
+    padding: 14px 20px;
+    color: #FFF;
     text-decoration: none;
+    float: none;
+    text-align: center;
 }
+
 
 main {
     display: inline-block
@@ -99,3 +95,8 @@ footer {
     color: #595959;
 }
  
+@media screen and (max-width 768px) {
+    nav {
+        flex-direction: column;
+      }
+}

@@ -19,8 +19,4 @@ A portfolio that includes a section about who I am and what I love followed by l
 
 ## **Images**
 
-Image of CSS:
-![Image of CSS](https://github.com/laurenb08/Portfolio/raw/main/assets/PortfolioCSS.png)
-
-Image of HTML:
-![Image of HTML](https://github.com/laurenb08/Portfolio/raw/main/assets/PortfolioHTML.png)
+![](https://github.com/laurenb08/Portfolio/raw/main/assets/My%20Portfolio.gif)

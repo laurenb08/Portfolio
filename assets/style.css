@@ -2,6 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  text-decoration: none;
 }
 
 body {
@@ -84,7 +85,8 @@ I wanted them all to have similar properties */
   justify-content: space-between;
   padding: 10px;
   margin-bottom: 20px;
-  text-align: center;
+  justify-content: center;
+  font-size: x-large;
   border-style: solid;
   border-width: 1px;
   height: 150px;
@@ -92,7 +94,7 @@ I wanted them all to have similar properties */
   min-width: 400px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  background-color: #b3bfb8;
+  background-color: #7e8d85;
   color: #ffffff;
 }
 
@@ -105,11 +107,31 @@ I wanted them all to have similar properties */
 }
 
 .project header {
-  margin-left: 20px;
-  padding: 20px;
+  margin: auto;
   text-align: center;
-  background: #b3bfb8;
+  vertical-align: middle;
+  background: #7e8d85;
   color: #fff;
+}
+
+.project header p {
+  font-size: 36px;
+  margin-bottom: 5px;
+}
+
+.project header a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.project header a:active {
+  color: blue;
+  text-decoration: underline;
+}
+
+.project header a:visited {
+  color: #fff;
+  text-decoration: underline;
 }
 
 section {

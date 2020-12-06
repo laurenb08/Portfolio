@@ -1,131 +1,293 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/style.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>My Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/" />
   </head>
-
   <body>
-    <!-- This section displays my header and nav bar. The nav bar is linked to each section of the page -->
-    <header>
-      <h1>Lauren Plenger</h1>
-    </header>
-
-    <nav>
-      <a href="#aboutMe">About Me</a>
-      <a href="#myProjects">My Projects</a>
-      <a href="#contactMe">Contact Me</a>
-    </nav>
-
-    <main>
-      <div id="aboutMe" class="aboutMe">
-        <h2>About Me</h2>
-        <br />
-        <!-- this section displays a current image of me with fixed height and width 
-                as well as alt text in case the image doesn't display in the browser and 
-                to make the image meet accessibility requirements -->
-        <img
-          src="./assets/Photo1.jpg"
-          width="200"
-          height="200"
-          alt="Photo of me"
-        />
-        <br />
-        <p>
-          I am a 30 year old mom of 1 and I love to hike, camp, play board
-          games, and workout!
-        </p>
-        <p>
-          In my professional life, I love to work on teams, solve puzzles, and
-          be creative. I have dabbled in coding for several years but got
-          serious about it in 2020 and have fallen in love. It's challenging and
-          exciting and has been a very fulfilling experience for me so far. I'm
-          excited to start making my mark on the world and having a positive
-          impact on others through the world of coding.
-        </p>
-        <p>Please take a look at my projects below, I hope you enjoy them!</p>
-      </div>
-    </main>
-
-    <!-- The ID in this section is what links the nav bar to this part of the page. 
-        The classes are there for styling of each project box that I created.
-        I don't have any projects to link to yet so they just have placeholder links. -->
-    <div id="myProjects" class="projects">
-      <h2>My Projects</h2>
-      <article>
-        <section class="project">
-          <header>
-            <p>On This Day in Space</p>
-            <a href="https://epowelldev.github.io/p01-on-this-day-in-space/"
-              >Live Site</a
-            >
-            <br />
-            <a href="https://github.com/epowelldev/p01-on-this-day-in-space"
-              >GitHub Repo</a
-            >
-          </header>
-        </section>
-        <section class="project">
-          <header>
-            <p>Workday Scheduler</p>
-            <a href="https://laurenb08.github.io/workDayScheduler/"
-              >Live Site</a
-            >
-            <br />
-            <a href="https://github.com/laurenb08/workDayScheduler"
-              >GitHub Repo</a
-            >
-          </header>
-        </section>
-        <section class="project">
-          <header>
-            <p>Weather Dashboard</p>
-            <a href="https://laurenb08.github.io/weatherDashboard/"
-              >Live Site</a
-            >
-            <br />
-            <a href="https://github.com/laurenb08/weatherDashboard"
-              >GitHub Repo</a
-            >
-          </header>
-        </section>
-        <section class="project">
-          <header><a href="#">Project 4</a></header>
-        </section>
-      </article>
-    </div>
-
-    <!-- about me section with a clickable link that allows you to directly email me -->
     <section>
-      <div id="contactMe" class="contactMe">
-        <h2>Contact Me</h2>
-        <ul>
-          <li>Phone: 425-444-1572</li>
-          <li>
-            Email: <a href="mailto: laurenb08@gmail.com">laurenb08@gmail.com</a>
+      <img
+        id="header-img"
+        src="./assets/HeaderImage.png"
+        class="card-img"
+        alt="floral background with my picture and name"
+      />
+    </section>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-5">
+      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#aboutMe">About Me</a>
           </li>
-          <li>
-            <a href="https://github.com/laurenb08">GitHub Profile</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#myProjects">My Projects</a>
           </li>
-          <li>
-            <a href="https://www.linkedin.com/in/lauren-plenger-01b2141b/"
-              >LinkedIn Profile</a
-            >
+          <li class="nav-item">
+            <a class="nav-link" href="#contactMe">Contact Me</a>
           </li>
-          <li>
+          <li class="nav-item">
             <a
-              href="https://drive.google.com/file/d/1wwbaEpjZs9AE4TZ7vy866H6P8MkFvfyC/view?usp=sharing"
-              >Click here to download my resume</a
+              class="nav-link"
+              href="https://drive.google.com/file/d/19VxsGGtMgYNZMsICsb0gvCY3CWyNakTW/view?usp=sharing"
+              >My Resume</a
             >
           </li>
         </ul>
       </div>
+    </nav>
+
+    <main>
+      <div id="aboutMe" class="container-fluid">
+        <div class="card mb-5">
+          <div class="card-header d-flex justify-content-between mb-0">
+            <h2>About Me</h2>
+          </div>
+          <!-- this section displays a current image of me with fixed height and width 
+              as well as alt text in case the image doesn't display in the browser and 
+              to make the image meet accessibility requirements -->
+
+          <p class="ml-3 pt-3">
+            I am a 30 year old mom of 1 and I love to hike, camp, play board
+            games, and workout!
+          </p>
+          <p class="ml-3">
+            In my professional life, I love to work on teams, solve puzzles, and
+            be creative. I have dabbled in coding for several years but got
+            serious about it in 2020 and have fallen in love. It's challenging
+            and exciting and has been a very fulfilling experience for me so
+            far. I'm excited to start making my mark on the world and having a
+            positive impact on others through the world of coding.
+          </p>
+          <p class="ml-3">
+            Please take a look at my projects below, I hope you enjoy them!
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <section id="myProjects" class="container-fluid">
+      <div class="card mb-5">
+        <div class="card-header d-flex justify-content-between mb-0">
+          <h2>My Projects</h2>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="card mb-3">
+                <img
+                  src="assets/SpaceScreenshot.png"
+                  class="card-img-top"
+                  alt="Space Project"
+                />
+
+                <div class="card-title text-center">On This Day in Space</div>
+                <div class="btn-group-vertical">
+                  <button class="btn bg-white text-muted">
+                    <a
+                      href="https://epowelldev.github.io/p01-on-this-day-in-space/"
+                      >Live Site</a
+                    >
+                  </button>
+                  <button class="btn bg-white text-muted">
+                    <a
+                      href="https://github.com/epowelldev/p01-on-this-day-in-space"
+                      class="text-muted"
+                      >GitHub Repo</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="card mb-3">
+                <img
+                  src="assetS/ScheduleScreenshot.png"
+                  class="card-img-top"
+                  alt="Workday Scheduler"
+                />
+
+                <div class="card-title text-center">Workday Scheduler</div>
+                <div class="btn-group-vertical">
+                  <button class="btn bg-white text-muted">
+                    <a href="https://laurenb08.github.io/workDayScheduler/"
+                      >Live Site</a
+                    >
+                  </button>
+                  <button class="btn bg-white text-muted">
+                    <a href="https://github.com/laurenb08/workDayScheduler"
+                      >GitHub Repo</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="card mb-3">
+                <img
+                  src="assets/WeatherScreenshot.png"
+                  class="card-img-top"
+                  alt="Weather Dashboard"
+                />
+
+                <div class="card-title text-center">On This Day in Space</div>
+                <div class="btn-group-vertical">
+                  <button class="btn bg-white text-muted">
+                    <a href="https://laurenb08.github.io/weatherDashboard/"
+                      >Live Site</a
+                    >
+                  </button>
+                  <button class="btn bg-white text-muted">
+                    <a href="https://github.com/laurenb08/weatherDashboard"
+                      >GitHub Repo</a
+                    >
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <footer>
-      <h2>Made by Lauren Plenger</h2>
-    </footer>
+    <section>
+      <div id="contactMe" class="container-fluid">
+        <div class="card mb-5">
+          <div class="card-header d-flex justify-content-between mb-0">
+            <h2>Contact Me</h2>
+          </div>
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="card mt-3 mb-3 align-items-center">
+                <svg
+                  width="3em"
+                  height="3em"
+                  viewBox="0 0 16 16"
+                  class="bi bi-phone-vibrate"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 3H6a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM6 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H6z"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 12a1 1 0 1 0 0-2 1 1 0 0 0 0 2zM1.599 4.058a.5.5 0 0 1 .208.676A6.967 6.967 0 0 0 1 8c0 1.18.292 2.292.807 3.266a.5.5 0 0 1-.884.468A7.968 7.968 0 0 1 0 8c0-1.347.334-2.619.923-3.734a.5.5 0 0 1 .676-.208zm12.802 0a.5.5 0 0 1 .676.208A7.967 7.967 0 0 1 16 8a7.967 7.967 0 0 1-.923 3.734.5.5 0 0 1-.884-.468A6.967 6.967 0 0 0 15 8c0-1.18-.292-2.292-.807-3.266a.5.5 0 0 1 .208-.676zM3.057 5.534a.5.5 0 0 1 .284.648A4.986 4.986 0 0 0 3 8c0 .642.12 1.255.34 1.818a.5.5 0 1 1-.93.364A5.986 5.986 0 0 1 2 8c0-.769.145-1.505.41-2.182a.5.5 0 0 1 .647-.284zm9.886 0a.5.5 0 0 1 .648.284C13.855 6.495 14 7.231 14 8c0 .769-.145 1.505-.41 2.182a.5.5 0 0 1-.93-.364C12.88 9.255 13 8.642 13 8c0-.642-.12-1.255-.34-1.818a.5.5 0 0 1 .283-.648z"
+                  />
+                </svg>
+                <div class="card-title text-center">Phone: 425-444-1572</div>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="card mt-3 mb-3 align-items-center">
+                <svg
+                  width="3em"
+                  height="3em"
+                  viewBox="0 0 16 16"
+                  class="bi bi-envelope"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"
+                  />
+                </svg>
+                <div class="card-title text-center">
+                  Email:
+                  <a href="mailto: laurenb08@gmail.com">laurenb08@gmail.com</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="card mt-3 mb-3 align-items-center">
+                <i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
+                <div class="card-title text-center">
+                  <a href="https://www.linkedin.com/in/lauren-plenger-01b2141b/"
+                    >LinkedIn Profile</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3">
+              <div class="card mt-3 mb-3 align-items-center">
+                <svg
+                  width="3em"
+                  height="3em"
+                  viewBox="0 0 16 16"
+                  class="bi bi-file-earmark-person"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4 0h5.5v1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5h1V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z"
+                  />
+                  <path d="M9.5 3V0L14 4.5h-3A1.5 1.5 0 0 1 9.5 3z" />
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
+                  />
+                  <path
+                    d="M8 12c4 0 5 1.755 5 1.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-.245S4 12 8 12z"
+                  />
+                </svg>
+                <div class="card-title text-center">
+                  <a
+                    href="https://drive.google.com/file/d/19VxsGGtMgYNZMsICsb0gvCY3CWyNakTW/view?usp=sharing"
+                    >Click here to download my resume</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
